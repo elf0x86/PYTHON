@@ -5,7 +5,10 @@ print(f"divi      = {20 / 3}")
 print(f"pote      = {2**8}")
 print(f"divi_int  = {20 / 3}")
 print(f"resto_div = {20 % 3}")
+print('='*5)
 print("repeat\n" * 3)
+print('='*5)
+
 
 # Ordem de Precedência dos operadores
 # 1 ()
@@ -22,3 +25,10 @@ print(f"exe01 = {exe01}")
 print(f"exe02 = {exe02}")
 print(f"exe03 = {exe03}")
 
+# Função interna
+print(pow(2,8))
+
+# Função externa
+import math
+print(81**(1/2)) # raiz quadrada
+print(math.sqrt(81))
