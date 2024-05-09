@@ -6,3 +6,19 @@ print(f"pote      = {2**8}")
 print(f"divi_int  = {20 / 3}")
 print(f"resto_div = {20 % 3}")
 print("repeat\n" * 3)
+
+# Ordem de Precedência dos operadores
+# 1 ()
+# 2 **
+# 3 * / // %
+# 4 + -
+
+
+exe01 = 5 + 3 * 2        # 11
+exe02 = 3 * 5 + 4 ** 2   # 31
+exe03 = 3 * (5 + 4) ** 2 # 243
+
+print(f"exe01 = {exe01}")
+print(f"exe02 = {exe02}")
+print(f"exe03 = {exe03}")
+
