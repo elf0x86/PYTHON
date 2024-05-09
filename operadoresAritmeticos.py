@@ -1,0 +1,8 @@
+print(f"soma      = {3 + 5}")
+print(f"subt      = {10 - 7}")
+print(f"mult      = {5 * 3}")
+print(f"divi      = {20 / 3}")
+print(f"pote      = {2**8}")
+print(f"divi_int  = {20 / 3}")
+print(f"resto_div = {20 % 3}")
+print("repeat\n" * 3)
