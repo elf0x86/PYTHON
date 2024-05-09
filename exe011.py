@@ -9,4 +9,4 @@ area = largura * altura
 
 litros = area / 2
 
-print(f"Tinta necessaria para pintar uma area de {area}² é {litros}L de tinta.")
+print(f"Tinta necessaria para pintar uma area de {area}² é {litros:.2f}L de tinta.")
