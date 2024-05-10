@@ -44,3 +44,5 @@ frase.split()                      # divide uma string em uma lista onde cada el
 
 '--'.join(frase)                   # 'C--u--r--s--o-- --e--m-- --V--i--d--e--o-- --P--y--t--h--o--n'
 '--'.join(frase.split())           # 'Curso--em--Video--Python'
+
+frase.split()[1][1]
