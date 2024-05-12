@@ -20,7 +20,7 @@ for a in range(0,8):
     for b in range(0,8):
         for x in range(0,4):
             print(sty[x], cor, bac, f'\033[{sty[x]};{cor};{bac}mTESTANDO CORES\033[m')
-
+    print('\n')
         bac += 1
 #    print('-'*30)
 
