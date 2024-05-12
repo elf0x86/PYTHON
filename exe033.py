@@ -23,3 +23,14 @@ if c < a and c < b:
     nome_input = 'c'
 
 print(f'O menor valor é {menor} e o nome da variavel é: {nome_input}')
+
+maior = a  # assumir que é o menor 
+nome_input2 = 'a'
+if b > a and b < c:
+    maior = b
+    nome_input = 'b'
+if c > a and c < b:
+    maior = c
+    nome_input = 'c'
+
+print(f'O maior valor é {maior} e o nome da variavel é: {nome_input2}')
