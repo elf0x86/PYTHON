@@ -8,12 +8,13 @@ escolha = int(input('''Escolha um adas bases para conversão
 Sua opção: '''))
 
 if escolha == 1:
-    print(f'{numero} para HEXADECIMAL {hex(numero)}')
+    print(f'{numero} para BINARIO {bin(numero)}')
 elif escolha == 2:
     print(f'{numero} para OCTAL {oct(numero)}')
 elif escolha == 3:
     print(f'{numero} para EXADECIMAL {hex(numero)}')
 else:
     print(f'Algo de Errado.')
+
 
 
