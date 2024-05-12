@@ -14,12 +14,13 @@ cor = 29
 bac = 40
 sty = [0,1,4,7]
 
-for x in range(0,8):
+for a in range(0,8):
     cor += 1
     bac = 40
-    for y in range(0,8):
-        for z in range(0,4):
-            print(sty[z], cor, bac)
-            bac += 1
-            if cor == 37:
-                cor = 30
+    for b in range(0,8):
+        for x in range(0,4):
+            print(sty[x], cor, bac, f'\033[{sty[x]};{cor};{bac}mTESTANDO CORES\033[m')
+
+        bac += 1
+#    print('-'*30)
+
