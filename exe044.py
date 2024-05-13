@@ -28,4 +28,5 @@ elif opcao == 3:
 elif opcao == 4:
     valor = compras + (compras * 20 / 100)
     print(f'Sua compra em 3x ou mais no cartão vai custar R${valor / 3} um total de R${valor}')
-    
+else:
+    print(f'Opção invalida de pagamendo. Tente novamente')
