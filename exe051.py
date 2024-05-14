@@ -18,6 +18,7 @@ print('ACABOU')
 
 # Forma para saber o enésimo termo de uma PA
 decimo = termo + (10 - 1) * razao
+print(f'range({termo}, {decimo + razao}, {razao})')
 
 for x in range(termo, decimo + razao, razao):
     print(f'{x} -> ', end='')
