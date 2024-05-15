@@ -9,7 +9,7 @@ print('Vou pensar em um número entre 0 e 5. Tente adivinhar...')
 print('--' + '=--'*20)
 
 numero = randint(0,5)
-chute = int(input("Em que número em pensei? "))
+chute = int(input("Em que número eu pensei? "))
 
 if chute == numero:
     print('Parabéns você ganhou!')
