@@ -15,4 +15,24 @@ for x in range(num, 0, -1):
     else:
         print('1', end='')
 
-print(f' = {tot}')
+print(f' = {tot}') 
+
+
+# Solução do video ------------------------------------------------------------
+
+from math import factorial
+n = int(input("Ver fatorial de: "))
+f = factorial(n)
+print(f'O fatorial de {n} é {f}')
+
+
+n = int(input("Ver fatorial de: "))
+c = n
+f = 1 # fator nulo de multiplicação
+print(f'Calaculando {n}! = ', end='')
+while c > 0:
+    print(f'{c}', end='')
+    print(' x ' if c > 1 else ' = ', end='')
+    f = f * c
+    c -= 1
+print(f)
