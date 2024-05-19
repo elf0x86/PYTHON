@@ -15,3 +15,14 @@ while True:
     total += 1
 
 print(f'Ao todo foram digitador {total} numeros. A soma entre todos é de {soma}')
+
+
+# Solução do video --------------------------------------------------------------------
+soma = cont = 0
+while True:
+    num = int(input('Digite um valor (999 para parar): '))
+    if num == 999:
+        break
+    cont += 1
+    soma += num
+print(f'A soma dos {cont} valores foi {soma}')
