@@ -13,3 +13,14 @@ for x in range(0, len(palavras)):
             print(f'{palavras[x][y]} ', end='')
     print()
 print('=' * 40)
+
+# Solução do video ----------------------------------------------------------------------
+palavras = ('aprender', 'programar', 'linguagem', 'python', 'curso',
+            'gratis', 'estudar', 'praticar', 'trabalhar', 'mercado',
+            'programador', 'futuro')
+
+for p in palavras:
+    print(f'\nNa palavra {p.upper()} temos ', end='')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
