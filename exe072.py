@@ -3,7 +3,7 @@
 # teclado (entre 0 e 20) e mostrá-lo por extenso.
 
 contagem_extenso = ('zero','um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete',
-                    'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze'
+                    'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze',
                     'quinze', 'deseseis', 'desesete', 'dezoito', 'dezenove',
                     'vinte')
 
@@ -20,3 +20,15 @@ while True:
     else:
         continue
 
+# Solução do video ----------------------------------------------------------
+cont = ('zero','um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete',
+                    'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze',
+                    'quinze', 'deseseis', 'desesete', 'dezoito', 'dezenove',
+                    'vinte')
+
+while True:
+    num = int(input('Digite um número de 0 a 20: '))
+    if 0 <= num <= 20: # if you type 20 will raise an error index out of range 
+        break
+    print('Tente novamente. ', end='')
+print(f'Você digitou o número {cont[num]}')
