@@ -24,3 +24,19 @@ if lista.count(5) >= 1:
     print(f'O valor 5 foi encontrado na lista!')
 else:
     print(f'O valor 5 não foi encontrado na lista!')
+
+# SOLUÇÃO DO VIDEO ------------------------------------------------------------------------------
+valores = []
+while True:
+    valores.append(int(input('Digite um valor: ')))
+    resp = str(input('Quer continuar? [S/N]: '))
+    if resp in 'Nn':
+        break
+print('=-' * 30)
+print(f'Você digitou {len(valores0} elementos.')
+print(f'Os valores em ordem decrescente são {valores}')
+if 5 in valores:
+    print('O valor 5 faz parte da lista!')
+else:
+    print('O valor 5 não foi encontrado na lista!')
+                                                    
