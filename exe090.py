@@ -31,3 +31,24 @@ else:
 print('-=' * 30)
 for k, v in aluno.items():
     print(f' - {k} é igual a {v}')
+
+''' OBS
+med = 5.1
+( 5 <= med < 7 )  <-- this expression is the same as this --> ( med < 7 and med >= 5 )
+>>> med = 5
+>>> 5 <= med < 7
+True
+>>> med < 7 and med >= 5
+True
+>>> med = 5.1
+>>> 5 <= med < 7
+True
+>>> med < 7 and med >= 5
+True
+>>> med = 7.5
+>>> 5 <= med < 7
+False
+>>> med < 7 and med >= 5
+False
+
+'''
