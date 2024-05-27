@@ -36,3 +36,38 @@ def contador(inicio=0, fim=0, passo=1):
         print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
         for x in range(inicio, fim+1, passo):
             print(f'{x} ', end='')
+    if inicio < fim and passo < 0:
+        passo = int(str(passo)[1:])
+        print('inicio < fim')
+        print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
+        for x in range(inicio, fim+1, passo):
+            print(f'{x} ', end='')
+
+
+    if inicio > fim:
+        print('inicio > fim')
+        print(f'Contagem de {fim} até {inicio} de {passo} em {passo}')
+        for x in range(inicio, fim, -passo):
+            print(f'{x} ', end='')
+    if inicio > fim and passo < 0:
+        print('inicio > fim or passo < 0')
+        passo = int(str(passo)[1:])
+        print(f'Contagem de {fim} até {inicio} de {passo} em {passo}')
+        for x in range(inicio, fim, -passo):
+            print(f'{x} ', end='')
+
+    print('FIM!')
+
+# PROGRAMA PRINCIPAL
+
+exemplo()
+print(f'\nAgora é sua vez de personalizar a contagem!')
+inicio = int(input(f'{"INICIO:": <10}'))
+fim    = int(input(f'{"FIM:": <10}'))
+passo  = int(input(f'{"PASSO:": <10}'))
+
+if passo == 0:
+    passo = 1
+
+contador(inicio, fim, passo)
+
