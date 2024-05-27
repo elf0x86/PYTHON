@@ -6,10 +6,8 @@
 # C) Uma contagem personalizada
 from time import sleep
 
-
 def msg(simbolo='=', repeticao=20):
     print(f'{simbolo}' * repeticao)
-
 
 def exemplo():
     msg()
@@ -70,4 +68,45 @@ if passo == 0:
     passo = 1
 
 contador(inicio, fim, passo)
+
+
+# SOLUÇÃO DO VIDEO -------------------------------------------------------------------------------
+from time import sleep
+
+def contador(i, f, p):
+    if p < 0:
+        p *= -1 # Trocando o sinal do passo
+    if p == 0:
+        p = 1
+
+    print('-=' * 30)
+    print(f'Contagem de {i}, até {f} de {p} em {p}.')
+
+
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f'{cont} ', end='', flush=True)
+            sleep(0.2)
+            cont += p
+        print('FIM.')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='', flush=True)
+            sleep(0.2)
+            cont -= p
+        print('FIM.')
+
+# Programa principal
+contador(0, 100, 10)
+contador(10, 0, 2)
+print('-=' * 30)
+print('Agora é sua vez de personalizar a contagem!')
+ini = int(input('Inicio: '))
+fim = int(input('Fim   : '))
+pas = int(input('Passo : '))
+
+contador(ini, fim, pas)
+
 
