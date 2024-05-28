@@ -73,3 +73,27 @@ fatorial_v1(5, show=True)
 
 help(fatorial_v0)
 help(fatorial_v1)
+
+
+# SOLUÇÃO DO VIDEO ------------------------------------------------------------------------------
+
+def fatorial(n, show=False):
+    '''
+    CALCULA O FATORIAL DE UM NÚMERO
+    :param n: O número a ser calculado.
+    :param show: (opcional) Mostrar ou não a conta.
+    :return: O valor fanoria de um número n
+    '''
+    f = 1
+    for c in range(n, 0, -1):
+        if show:
+            print(c, end='')
+            if c > 1:
+                print(' x ', end='')
+            else:
+                print(' = ', end='')
+        f *= c
+    return f
+
+print(fatorial(5, show=True))
+help(fatorial)
