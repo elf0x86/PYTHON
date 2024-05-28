@@ -35,3 +35,27 @@ voto(2015)
 voto(1899)
 voto(2023)
 voto(2027)
+
+
+# SOLUÇÃO DO VIDEO -------------------------------------------------------------------------------
+# from datetime import date  # É IMPORTADA PARA O PROGRAMA INTEIRO
+
+def voto(ano):
+    # ESCOPO DE IMPORTAÇÃO
+    from datetime import date # a classe date só vai ficar na memória durante a execução Economizando memória :)
+
+    atual = date.today().year
+    idade = atual - ano
+
+    if idade < 16:
+        return f'Com {idade} anos NÃO VOTA'
+    if 16 <= idade < 18 or idade > 65:
+        return f'Com {idade} anos VOTO OPCIONAL'
+    else:
+        return f'Com {idade} anos VOTO OBRIGATÓRIO'
+
+
+print(voto(2000))
+print(voto(2010))
+print(voto(1990))
+# mes = date.today.month # Já não funciona mais prq o import global foi comentado
